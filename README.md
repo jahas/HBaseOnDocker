@@ -32,11 +32,11 @@ Before you will run the docker image first you have to:
 To run the docker image it is enough to:
 * Run command `sh ./run-cloudera-docker.sh`. It will start the container and return it's ID
 * Run command `docker attach {docker container ID}`. It will startup the quickstart.cloudera.
-* Inside docker run command `cd && sh ./initialize.sh`. It will add your conda env python to the path
+* Inside docker run command `export PATH=/root/conda/envs/hbase-env/bin:$PATH`. It will add your conda env to the PATH.Because of that Python 3.7 will be available.
 
 
 ### Playing with the container
-**All commands from this section should be run inside the container from ~ location**
+**All commands from this section should be run inside the container from `/root` location**
 To setup new HBase table do this step:
 * Inside docker run command `hbase shell ./setup.hbase`. It will add a table and fill it with some records.
 
