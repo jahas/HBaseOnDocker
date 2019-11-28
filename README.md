@@ -1,4 +1,9 @@
 # HBaseOnDocker
+## Tested on:
+* Linux (ok)
+* Windows (not compatible)
+* MacOS (not checked)
+
 ## Structure of a structure
 ```
 .
