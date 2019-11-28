@@ -1,0 +1,11 @@
+create_namespace 'adam'
+create 'adam:table', {NAME=>'a', VERSIONS=>2}, {NAME=>'b', VERSIONS=>2}
+
+put 'adam:table', 'the_row', 'a:the_column', 'the value'
+put 'adam:table', 'the_row', 'b:the_column', 'the value from the the_column column at column family b'
+put 'adam:table', 'other_row', 'a:the_column', 'the value 1'
+put 'adam:table', 'other_row', 'b:the_column', 'b value 1'
+put 'adam:table', 'other_row', 'a:the_column', 'the value 2'
+put 'adam:table', 'other_row', 'b:the_column', 'b value 2'
+put 'adam:table', 'other_row', 'a:the_column', 'the value 3'
+put 'adam:table', 'other_row', 'b:the_column', 'b value 3'
