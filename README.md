@@ -24,8 +24,7 @@ In order to use this code you should install:
 ## Preparations
 
 Before you will run the docker image first you have to:
-* Run `conda create --prefix ./conda/envs/hbase-env -f ./environment.yml` on Linux
-* Run `conda env create --prefix ./conda/envs/hbase-env -f ./environment.yml` on Windows
+* Run `conda env create -f ./environment.yml -p ./conda/envs/hbase-env`
 
 ## Running the docker
 

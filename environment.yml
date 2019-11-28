@@ -1,4 +1,4 @@
-name: null
+prefix: ./conda/envs/hbase-env
 channels:
   - conda-forge
   - defaults
